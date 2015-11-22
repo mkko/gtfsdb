@@ -1,0 +1,39 @@
+{
+  "name": "gtfsdb",
+  "version": "0.1.0",
+  "description": "High-performance GTFS database",
+  "main": "gtfsdb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gtfs",
+    "transit",
+    "timetables",
+    "sql",
+    "query",
+    "postgresql",
+    "mysql",
+    "mariadb",
+    "sqlite3"
+  ],
+  "author": "Mikko Välimäki <mkko1373@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.0",
+    "bluebird": "^3.0.5",
+    "csv": "^0.4.6",
+    "expand-tilde": "^1.2.0",
+    "hashmap": "^2.0.4",
+    "request": "^2.65.0",
+    "underscore": "^1.8.3",
+    "unzip2": "^0.2.5"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
