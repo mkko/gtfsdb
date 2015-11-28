@@ -10,7 +10,7 @@ GTFSdb is a database abstraction that deals with [GTFS][1] files. It is designed
 For GTFSdb to work it needs Knex.js with the underlying database (PostgreSQL, MariaDB, MySQL, SQLite). So far GTFSdb has only been tested with PostgreSQL.
 
 # Example application
-An example application is still a work in progress.
+An example application can be found here: [gtfsdb-example][3]
 
 # Installation
 Instructions are updated here once the package hits npm. In the meantime GTFSdb can be either copied to your project or used as a submodule.
@@ -88,7 +88,7 @@ module.exports = {
 
 [1]: https://developers.google.com/transit/gtfs/
 [2]: https://github.com/brendannee/node-gtfs
-[3]: https://github.com/mkko/gtfs-to-html
+[3]: https://github.com/mkko/gtfsdb-example
 [4]: http://knexjs.org
 [5]: http://knexjs.org/#Installation
 [6]: http://bussinavi.fi
