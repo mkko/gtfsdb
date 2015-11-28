@@ -26,7 +26,7 @@ var knex = require('knex')({
   searchPath: 'knex,public'
 });
 // Then load the library
-var gtfsdb = require('../lib/gtfsdb')(knex);
+var gtfsdb = require('gtfsdb')(knex);
 ```
 
 # Schema migrations
