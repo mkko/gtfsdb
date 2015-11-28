@@ -22,6 +22,7 @@ exports.up = function (knex, Promise) {
       table.string('agency_phone');
       table.string('agency_fare_url');
       table.string('last_update');
+      table.unique(['agency_entry_id', 'agency_id']);
     })
     
     .createTable('stop', function(table) {
