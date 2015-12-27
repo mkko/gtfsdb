@@ -21,7 +21,7 @@ exports.up = function (knex, Promise) {
       table.string('agency_lang');
       table.string('agency_phone');
       table.string('agency_fare_url');
-      table.string('last_update');
+      table.timestamp('last_update');
       table.unique(['agency_entry_id', 'agency_id']);
     })
     
@@ -93,8 +93,10 @@ exports.up = function (knex, Promise) {
       table.integer('friday').notNullable();
       table.integer('saturday').notNullable();
       table.integer('sunday').notNullable();
-      table.date('start_date').notNullable();
-      table.date('end_date').notNullable();
+      table.timestamp('start_date')
+        .notNullable();
+      table.timestamp('end_date')
+        .notNullable();
     })
 
     .createTable('calendar_date', function(table) {
@@ -103,8 +105,8 @@ exports.up = function (knex, Promise) {
       table.timestamp('updated_at').defaultTo(knex.fn.now());
 
       table.biginteger('service_id').unsigned().notNullable().references('id').inTable('service').onDelete('CASCADE').index();
-      table.date('date').notNullable();
       table.integer('exception_type').notNullable();
+      table.timestamp('date').notNullable();
     })
 
     .createTable('shape', function(table) {
